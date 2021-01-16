@@ -48,3 +48,5 @@ If you want to learn more about building native executables, please consult http
 <p>A Hello World RESTEasy resource</p>
 
 Guide: https://quarkus.io/guides/rest-json
+
+hello
