@@ -24,12 +24,12 @@ steps:
 
       echo "##vso[task.setvariable variable=JAVA_HOME]$(JDK_PATH)"
       echo "##vso[task.setvariable variable=JAVA_HOME__X64]$(JDK_PATH)"
-      echo "##vso[task.setvariable variable=PATH]$(jdk_path)/bin:$(PATH)"
+      echo "##vso[task.setvariable variable=PATH]$(JDK_PATH)/bin:$(PATH)"
       ls /usr/lib/jvm
       echo "$PATH"
       echo "$JAVA_HOME"
     env:
-     jdk_Path: '/usr/lib/jvm/java-11-openjdk-amd64'
+     JDK_PATH: '/usr/lib/jvm/java-11-openjdk-amd64'
     displayName: 'Install openjdk11'
 
   - task: Maven@3
