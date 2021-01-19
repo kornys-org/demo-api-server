@@ -1,5 +1,7 @@
 # demo-api-server project
 
+![Maven Package](https://github.com/kornys/demo-api-server/workflows/Maven%20Package/badge.svg?branch=main)
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
