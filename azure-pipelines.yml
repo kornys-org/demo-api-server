@@ -1,0 +1,32 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - 'master'
+      - 'release-*'
+  tags:
+    include:
+      - '*'
+pr:
+  # Cancel old builds when new push is done
+  autoCancel: true
+  branches:
+    include:
+      - '*'
+
+pool:
+  # Image which will be used as a base
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello ci-demo!
+  displayName: 'Say Hello!'
+
+- script: |
+    echo 'Another pipeline will be executed when this one finished'
+    echo 'See other pipeline in this project, you should see it was executed!'
+  displayName: 'Announce trigger of new pipeline'
