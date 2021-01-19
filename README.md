@@ -1,6 +1,7 @@
 # demo-api-server project
 
 ![Maven Package](https://github.com/kornys/demo-api-server/workflows/Maven%20Package/badge.svg?branch=main)
+[![Build Status](https://dev.azure.com/jstejska/ci-demo/_apis/build/status/build?branchName=main)](https://dev.azure.com/jstejska/ci-demo/_build/latest?definitionId=10&branchName=main)
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
