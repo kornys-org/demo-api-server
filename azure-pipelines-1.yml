@@ -35,5 +35,5 @@ steps:
       publishJUnitResults: true
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
-      options: '''
+      options: ''
     displayName: 'Run systemtests'
