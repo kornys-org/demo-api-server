@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        run: echo ${{ github.event.payload.pull_request.body }}
+        run: echo "pepa"
 
