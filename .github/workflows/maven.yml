@@ -7,9 +7,13 @@ on:
     types: [created]
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: test
-        run: echo "pepa"
+      - uses: khan/pull-request-comment-trigger@master
+        id: check
+        with:
+          trigger: '/run-tests'
+      - run: 'echo Found it!'
+        if: steps.check.outputs.triggered == 'true'
 
