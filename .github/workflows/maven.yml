@@ -3,6 +3,8 @@
 
 name: Integration tests
 on:
+  pull_request:
+    branches: ["main"]
   issue_comment:
     types: [created]
 
@@ -13,6 +15,4 @@ jobs:
       - name: test 1
         run: |
           echo "Comment on PR #${{ github.event.issue.number }}"
-      - name: test
-        run: "echo ${{ github.event.payload.pull_request.body }}"
 
